@@ -11,7 +11,7 @@ body {
 .center-content {
   width: 100%;
   padding: 0 1rem;
-  max-width: 500px;
+  max-width: 700px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -62,4 +62,31 @@ h2  > .twa {
 
 .text-center {
   text-align: center;
+}
+
+@media (min-width: 700px){
+  h1 {
+    font-size: 3.5rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+  p {
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+  }
+  .summary {
+    font-size: 1.5rem;
+    margin-bottom: 4rem;
+  }
+  h2  > .twa {
+    bottom: -0.6rem;
+    font-size: 3rem;
+  }
+  .top-heading {
+    margin-bottom: 2rem;
+  }
 }
