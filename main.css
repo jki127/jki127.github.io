@@ -3,16 +3,22 @@
 }
 
 body {
-  font-family: -apple-system,BlinkMacSystemFont,avenir next,avenir,helvetica neue,helvetica,ubuntu,roboto,noto,segoe ui,arial,sans-serif;
+  font-family: -apple-system,BlinkMacSystemFont,avenir next,avenir,
+  helvetica neue,helvetica,ubuntu,roboto,noto,segoe ui,arial,sans-serif;
   max-width: 100%;
   background-color: #f1f3f5;
 }
 
 .center-content {
   width: 100%;
+  max-width: 700px;
   padding: 0 1rem;
   margin-left: auto;
   margin-right: auto;
+}
+
+h1, h2, h3, h4, h5, p {
+  margin-bottom: 0;
 }
 
 h1 {
@@ -23,7 +29,7 @@ h1 {
 
 h2 {
   font-weight: 200;
-  font-size: 1.5rem;
+  font-size: 2.3rem;
   margin-bottom: 1em;
   color: #408BC9;
   position: relative;
@@ -31,12 +37,18 @@ h2 {
 
 h3 {
   font-weight: normal;
-  font-size: 1.3rem;
+  font-size: 1.8rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-top: 0.5em;
 }
 
 p {
-  font-size: 1.3rem;
-  line-height: 1.5;
+  font-size: 1.5rem;
+  line-height: 1.58;
   color: #667788;
 }
 
@@ -49,7 +61,7 @@ h2  > .twa {
 
 .top-heading {
   margin-bottom: 0.5em;
-  margin-top: 2.5em;
+  margin-top: 1.5em;
 }
 
 .summary {
@@ -57,21 +69,23 @@ h2  > .twa {
   font-weight: normal;
   color: #667788;
   text-align: center;
-  margin-bottom: 3em;
+  margin-bottom: 5em;
 }
 
 .text-center {
   text-align: center;
 }
 
-@media (min-width: 600px){
-  .center-content {
-    width: 80%;
-  }
+code {
+  font-family: cousine,"SFMono-Regular",Consolas,Menlo,"Liberation Mono",
+  "Ubuntu Mono",Courier,monospace;
 }
 
-@media (min-width: 800px){
-  .center-content {
-    width: 60%;
-  }
+.stack code {
+  color: #408BC9;
+  border: 1px solid #408BC9;
+  padding: 5px;
+  border-radius: 3px;
+  display: inline-block;
+  margin: 5px 1px 0 0;
 }
